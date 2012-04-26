@@ -31,4 +31,11 @@ public class AppTest extends TestCase {
 	public final void testApp() {
 		assertTrue(true);
 	}
+	
+	/**
+	 * Another rigourous Test :-).
+	 */
+	public final void testMarius() {
+		assertTrue(true);
+	}
 }
