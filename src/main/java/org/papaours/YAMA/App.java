@@ -17,6 +17,7 @@ public final class App {
 	 * 
 	 */
 	private App() {
+		/* Modification inutile faite par moi même*/
 		System.out.println("App constructor");
 	}
 }
