@@ -2,7 +2,7 @@ package org.papaours.YAMA;
 
 /**
  * Hello world!
- * 
+ *
  */
 public final class App {
 	/**
@@ -14,7 +14,7 @@ public final class App {
 	}
 
 	/**
-	 * 
+	 *
 	 */
 	private App() {
 		/* Modification inutile faite par moi même 2*/
