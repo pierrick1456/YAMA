@@ -17,7 +17,7 @@ public class AppTest extends TestCase {
 
 	/**
 	 * Create the test case.
-	 * 
+	 *
 	 * @param testName
 	 *            name of the test case
 	 */
@@ -31,7 +31,7 @@ public class AppTest extends TestCase {
 	public final void testApp() {
 		assertTrue(true);
 	}
-	
+
 	/**
 	 * Another rigourous Test :-).
 	 */

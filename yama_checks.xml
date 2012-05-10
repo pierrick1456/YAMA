@@ -13,20 +13,16 @@
   <module name="TreeWalker">
     <module name="JavadocMethod">
       <property name="scope" value="protected"/>
-      <property name="excludeScope" value="private"/>
       <property name="suppressLoadErrors" value="true"/>
     </module>
     <module name="JavadocType">
-      <property name="excludeScope" value="private"/>
       <property name="scope" value="protected"/>
     </module>
     <module name="JavadocVariable">
-      <property name="excludeScope" value="private"/>
       <property name="scope" value="protected"/>
     </module>
     <module name="JavadocStyle">
       <property name="scope" value="protected"/>
-      <property name="excludeScope" value="private"/>
       <property name="checkEmptyJavadoc" value="true"/>
     </module>
     <module name="ConstantName"/>
@@ -118,6 +114,7 @@
     <module name="MethodLength">
       <property name="severity" value="error"/>
       <property name="max" value="20"/>
+      <property name="countEmpty" value="false"/>
     </module>
     <module name="ParameterNumber">
       <property name="severity" value="error"/>
@@ -154,10 +151,6 @@
   <module name="Translation"/>
   <module name="FileLength">
     <property name="severity" value="error"/>
-  </module>
-  <module name="RegexpSingleline">
-    <property name="format" value="\s+$"/>
-    <property name="message" value="Line has trailing spaces."/>
   </module>
   <module name="StrictDuplicateCode">
     <property name="severity" value="warning"/>
