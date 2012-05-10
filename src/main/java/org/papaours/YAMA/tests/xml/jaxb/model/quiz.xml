@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<quiz>
+	<name>Quiz 1</name>
+
+	<questions>
+		<category>
+			<text>Question 1</text>
+		</category>
+	</questions>
+</quiz>
