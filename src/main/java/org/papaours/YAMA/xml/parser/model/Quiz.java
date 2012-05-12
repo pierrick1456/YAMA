@@ -1,7 +1,5 @@
 package org.papaours.YAMA.xml.parser.model;
 
-import java.util.List;
-
 import javax.xml.bind.annotation.XmlAttribute;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
@@ -12,7 +10,7 @@ import javax.xml.bind.annotation.XmlRootElement;
  * @author viking
  * 
  */
-@XmlRootElement
+@XmlRootElement(name = "quiz")
 public class Quiz {
 
 	/**
@@ -25,20 +23,10 @@ public class Quiz {
 	 */
 	private String label;
 
-	/**
-	 * The list of the quiz questions.
+	/***
+	 * A list of questions.
 	 */
-	private List<Question> questions;
-
-	/**
-	 * Add a new question into the questions list.
-	 * 
-	 * @param question
-	 *            : the new question
-	 */
-	public final void addQuestion(final Question question) {
-		questions.add(question);
-	}
+	private Questions questions;
 
 	/**
 	 * Get the label.
@@ -49,12 +37,10 @@ public class Quiz {
 		return label;
 	}
 
-	/***
-	 * Set the questions list.
-	 * 
-	 * @return the question list
+	/**
+	 * @return the questions
 	 */
-	public final List<Question> getQuestions() {
+	public Questions getQuestions() {
 		return questions;
 	}
 
@@ -73,13 +59,11 @@ public class Quiz {
 	}
 
 	/**
-	 * Set the questions list.
-	 * 
-	 * @param value
-	 *            : the new questions list
+	 * @param questions
+	 *            the questions to set
 	 */
-	@XmlElement(name = "questions", required = true)
-	public final void setQuestions(final List<Question> value) {
-		questions = value;
+	@XmlElement
+	public void setQuestions(final Questions questions) {
+		this.questions = questions;
 	}
 }

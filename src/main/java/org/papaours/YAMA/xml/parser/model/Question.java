@@ -1,6 +1,7 @@
 package org.papaours.YAMA.xml.parser.model;
 
 import javax.xml.bind.annotation.XmlAttribute;
+import javax.xml.bind.annotation.XmlRootElement;
 
 /**
  * 
@@ -9,6 +10,7 @@ import javax.xml.bind.annotation.XmlAttribute;
  * @author Pierrick MARIE: pierrick.marie1456@gmail.com
  * 
  */
+@XmlRootElement(name = "question")
 public class Question {
 
 	/**
@@ -37,7 +39,7 @@ public class Question {
 	 *            : the new label value
 	 */
 	@XmlAttribute(name = "name", required = true)
-	public final void setLabel(final String value) {
+	public final void setName(final String value) {
 		if (value.length() <= Question.MIN_NAME_SIZE) {
 			throw new IllegalArgumentException();
 		}

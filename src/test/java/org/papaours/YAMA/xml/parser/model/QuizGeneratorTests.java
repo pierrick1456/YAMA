@@ -43,6 +43,14 @@ public class QuizGeneratorTests {
 	@Test
 	public final void test() {
 		quiz.setLabel("The test of the quiz");
+
+		Question question = new Question();
+		question.setName("My question's name");
+
+		Questions questions = new Questions();
+		questions.addQuestion(question);
+
+		quiz.setQuestions(questions);
 		try {
 			context.createMarshaller().marshal(quiz, System.out);
 		} catch (JAXBException e) {
